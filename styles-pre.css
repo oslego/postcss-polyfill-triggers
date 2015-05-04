@@ -1,0 +1,23 @@
+.test{
+  width: 300px;
+  height: 300px;
+
+  /* @polyfill */
+  background: flamingo;
+  -webkit-animation: background\:flamingo 1s; /* Safari will not trigger 'animationstart' if there's no duration. */
+          animation: background\:flamingo 1s;
+}
+
+@media (min-width: 30em){
+  .test{
+    background: boratmankini;
+    -webkit-animation: background\:boratmankini 1s;
+            animation: background\:boratmankini 1s;
+  }
+}
+
+@-webkit-keyframes background\:flamingo {to{opacity: inherit}}
+        @keyframes background\:flamingo {to{opacity: inherit}}
+
+@-webkit-keyframes background\:boratmankini {to{opacity: inherit}}
+        @keyframes background\:boratmankini {to{opacity: inherit}}
